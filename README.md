@@ -6,7 +6,7 @@ Las técnicas que aprenderás en el tutorial son fundamentales para crear cualqu
 
 El tutorial está dividido en varias secciones:
 
-- Setup — Configuración para el tutorial
+- Setup — Configuración para el tutorial.
 - Overview — Visión General y fundamentos de una aplicación en React: components, props, and state.
 - Analysis — Conociendo el proyecto, UX y el desarrollo en base a components.
 - Development & TDD — Manos a la obra con la app. Buenas prácticas y desarrollo en base a TDD.
@@ -52,7 +52,7 @@ También se espera que conozcas cómo usar Git, así que aquí te dejamos alguno
 - https://www.atlassian.com/git/tutorials
 - https://guides.github.com/
 
-Muy bien, dicho todo esto, manos a la obra! Clona este repositorio y una vez descargado, cambia al branch `setup`, luego revisa el archivo setup.MD para el próximo contenido.
+Muy bien, dicho todo esto, manos a la obra! Clona este repositorio y una vez descargado, cambia al branch `setup`, luego revisa el archivo README.md para el próximo contenido.
 
     git clone https://github.com/richardblondet/tutorial-reactjs.git
     git cd tutorial-reactjs
