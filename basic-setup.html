@@ -1,0 +1,76 @@
+<!doctype html>
+<!-- 
+    Holi! Lee todo!
+ -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Hello React!</title>
+    
+    <!--
+        Vamos a cargar tres archivos desde un CDN en la cabeza: React, React DOM y Babel.
+
+        Estoy cargando las últimas versiones estables de las librerías
+
+        React - la API de nivel superior React
+        React DOM - agrega métodos específicos de DOM
+        Babel - un compilador de JavaScript que nos permite usar ES6 + en navegadores antiguos 
+    -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+</head>
+
+<body>
+    
+    <!-- 
+        También vamos a hacer un div con un id llamado root, 
+
+        Es el punto de entrada para nuestra aplicación será el elemento de div raíz, que se nombra por convención.
+        y... 
+     -->
+    <div id="root"></div>
+
+
+    <!-- 
+        Finalmente crearemos una etiqueta de script donde vivirá el código eterno personalizado.
+
+        También notarás el tipo de script "text/babel", que es obligatorio para usar Babel.
+     -->
+    <script type="text/babel">
+
+        /**
+         * Vamos a utilizar las clases de ES6 para crear un componente React llamado Hola.
+         */
+        class Hola extends React.Component { 
+
+            /**
+             * Agregaremos el método 'render' en nuestra clase. Este método es el único requerido en un componente de clase, que se utiliza para producir DOM nodes (nodos DOM).
+             */
+            render() { 
+
+                /**
+                 * Dentro de la declaración de este método, vamos a poner lo que parece un simple elemento HTML. Ten en cuenta que no estamos devolviendo un string aquí, así que no uses comillas alrededor del elemento. Esto se llama JSX, y aprenderemos más sobre esto pronto.
+                 */
+                return (
+                    <h1>Hello React!</h1>
+                ); 
+            } 
+        } 
+        
+
+        /**
+         * Finalmente, vamos a utilizar el método `ReactDOM.render()` para producir la clase de aplicación que creamos en el div root en nuestro HTML.
+         */
+        ReactDOM.render(<Hola />, document.getElementById('root'));
+
+        /**
+         * Ahora, si ves este archivo en el navegador, verás la etiqueta h1 que creamos representada para el DOM.
+         */
+    </script>
+
+</body>
+
+</html>
